@@ -39,7 +39,9 @@ Saved model checkpoints and per-example predictions are not included. CIFAR-10 i
 
 Preprint and archived manuscript files: [Zenodo record](https://zenodo.org/records/23120094).
 
-The manuscript is prepared for submission to *Information*. An arXiv identifier will be added when available.
+Submitted to arXiv on 3 October 2026; technical and moderation checks are pending. The public arXiv identifier and link will be added after announcement.
+
+The manuscript is prepared for submission to *Information*.
 
 ## License
 
