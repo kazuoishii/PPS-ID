@@ -37,11 +37,13 @@ Saved model checkpoints and per-example predictions are not included. CIFAR-10 i
 
 ## Publication status
 
-The manuscript is prepared for submission to *Information*. A preprint DOI and arXiv identifier will be added when available.
+Preprint and archived manuscript files: [Zenodo record](https://zenodo.org/records/23120094).
+
+The manuscript is prepared for submission to *Information*. An arXiv identifier will be added when available.
 
 ## License
 
-The MIT license in `LICENSE` applies to the software code and its usage documentation. No separate reuse license is assigned here to the manuscript figure or experimental result files; please contact the corresponding author concerning their reuse.
+The MIT license in `LICENSE` applies to the software code and its usage documentation. The manuscript, figures, and derived experimental results are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), as specified in the Zenodo record.
 
 ## Contact
 
