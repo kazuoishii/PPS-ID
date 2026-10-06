@@ -1,6 +1,6 @@
 # PPS-ID
 
-Companion code and results for **Platonic Projection Structures-Based Information Dynamics (PPS-ID): Recursive Transformation of Observable Information** by Kazuo Ishii, Bishnu Prasad Gautam, and Javaid Saher.
+Companion code and results for **Platonic Projection Structures-Based Information Dynamics (PPS-ID): Recursive Transformation of Observable Information** by Kazuo Ishii, Bishnu Prasad Gautam, and Saher Javaid.
 
 PPS-ID evaluates observable-state change separately from changes in a specified task-dependent preservation functional. This repository provides the CIFAR-10 experiment: five generations of recursive KL knowledge distillation and a matched fixed-teacher condition across five paired seeds (42–46).
 
