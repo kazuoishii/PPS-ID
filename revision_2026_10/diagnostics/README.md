@@ -16,4 +16,6 @@ The audit recomputes all numerical comparisons and checks equality of the record
 - CPU trials match on all recorded quantities at all three updates.
 - MPS post-update weight hash strings differ from the first update. Maximum recorded logit difference is 2.682209014892578e-7; maximum loss and classification-head gradient differences are both 9.5367431640625e-7. Teacher probability differences are zero.
 - CPU-versus-MPS equality is not asserted. These within-backend short traces do not establish full-training determinism, explain IMDb branch divergence, or quantify final-accuracy effects.
-- Original 100-update raw records and trained model checkpoints remain unavailable in the supplied materials.
+- Recovered 100-update records are now included in `100_update/`. BERT checkpoints are available at https://github.com/kazuoishii/PPS-ID/releases/tag/bert-checkpoints-2026-10; CIFAR-10 checkpoints remain unavailable.
+
+Recovered 100-update records: diagnostics/100_update/; run `python code/audit_100_update_diagnostics.py`. This verifies saved comparisons, not a training rerun.
