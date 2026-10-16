@@ -1,0 +1,4 @@
+Repository availability statement
+The saved prediction arrays, experimental settings, training and analysis code, 150 CKA records, derived tables and plot-regeneration commands supporting the revised manuscript are available in revision_2026_10 at https://github.com/kazuoishii/PPS-ID. Cite the publication commit or immutable tree link recorded in the publication receipt.
+
+Original trained weights are not contained in the supplied supplement and are not uploaded. Recomputing CKA from hidden features requires the original 55 soft-only CIFAR-10 checkpoints and CIFAR-10 images; regenerating the plots requires only the included records. The checkpoint download location has not been supplied. Raw short-prefix BERT repeatability diagnostic logs are unavailable; the diagnostic is not represented as independently reproduced.

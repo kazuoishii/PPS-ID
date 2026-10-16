@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "output": "CHECKPOINT_ROOT/bert_5gen_seed42_mps",
+    "seeds": [
+      42
+    ],
+    "generations": 5,
+    "epochs": 3,
+    "teacher_epochs": 3,
+    "train_size": 5000,
+    "eval_size": 0,
+    "batch_size": 4,
+    "max_length": 128,
+    "lr": 2e-05,
+    "temperature": 4,
+    "model": "google-bert/bert-base-uncased",
+    "revision": "main",
+    "device": "mps"
+  },
+  "status": "completed",
+  "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "train_size": 5000,
+  "eval_size": 872,
+  "evaluation_split": "SST-2 validation (not hidden-label test)",
+  "subset_seed": 2026,
+  "train_fingerprint": "9f73814d3d253902",
+  "eval_fingerprint": "0e2b00033b48693f",
+  "torch_version": "2.13.0",
+  "transformers_version": "5.15.1",
+  "datasets_version": "5.0.1",
+  "python_version": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "supervision": "M0:CE; students:KL_only",
+  "initialization": "each model starts from same pretrained BERT revision; classifier randomly initialized",
+  "Q": "validation_accuracy_fraction",
+  "D": "mean_JS_natural_log_at_temperature_1",
+  "optimizer": "AdamW weight_decay=0.01; constant_lr; gradient_clip=1.0"
+}

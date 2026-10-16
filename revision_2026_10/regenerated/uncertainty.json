@@ -1,0 +1,30 @@
+[
+  {
+    "dataset": "cifar10_soft",
+    "fixed_minus_recursive_pp": 1.5419999999999998,
+    "paired_seed_t95_pp": [
+      0.581919895602785,
+      2.5020801043972147
+    ],
+    "conditional_test_bootstrap95_pp": [
+      1.19195,
+      1.902
+    ],
+    "replicates": 2000,
+    "bootstrap_seed": 20261012
+  },
+  {
+    "dataset": "cifar10_mixed",
+    "fixed_minus_recursive_pp": -1.108,
+    "paired_seed_t95_pp": [
+      -1.5468540158135333,
+      -0.6691459841864669
+    ],
+    "conditional_test_bootstrap95_pp": [
+      -1.4480500000000003,
+      -0.7820000000000003
+    ],
+    "replicates": 2000,
+    "bootstrap_seed": 20261012
+  }
+]

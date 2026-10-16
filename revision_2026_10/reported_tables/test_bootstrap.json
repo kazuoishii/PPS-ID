@@ -1,0 +1,10 @@
+{
+  "mean_pp": 1.542,
+  "conditional_test_bootstrap_95_percentile_pp": [
+    1.19195,
+    1.902
+  ],
+  "replicates": 2000,
+  "seed": 20261012,
+  "interpretation": "Common paired test-example resampling, fixed five trained seed pairs. Excludes training-seed uncertainty; assumes exchangeable test examples. Not an independent-dataset interval."
+}

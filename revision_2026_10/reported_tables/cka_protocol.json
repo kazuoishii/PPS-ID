@@ -1,0 +1,12 @@
+{
+  "samples": 1000,
+  "selection_seed": 20261012,
+  "layers": [
+    "pool1 GAP",
+    "pool2 GAP",
+    "FC ReLU"
+  ],
+  "CKA": "biased centered linear Gram CKA float64",
+  "torch": "2.11.0+cu130",
+  "device": "cuda"
+}

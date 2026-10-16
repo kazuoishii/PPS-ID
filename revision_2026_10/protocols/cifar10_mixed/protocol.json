@@ -1,0 +1,21 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "generations": 5,
+  "epochs": 10,
+  "teacher_epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "temperature": 4.0,
+  "workers": 0,
+  "train_limit": 0,
+  "test_limit": 0,
+  "alpha": 0.5,
+  "teacher_root": "/content/drive/MyDrive/PPS_ID/kd_full",
+  "self_test": false
+}

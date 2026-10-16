@@ -1,0 +1,24 @@
+{
+  "device": "mps",
+  "seeds": [
+    42,
+    43
+  ],
+  "generations": 5,
+  "teacher_epochs": 3,
+  "epochs": 3,
+  "train_size": 5000,
+  "eval_size": 1000,
+  "batch_size": 8,
+  "max_length": 128,
+  "lr": 2e-05,
+  "temperature": 4.0,
+  "model": "google-bert/bert-base-uncased",
+  "revision": "main",
+  "versions": {
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "datasets": "4.5.0",
+    "python": "3.9.6"
+  }
+}

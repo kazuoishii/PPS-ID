@@ -1,0 +1,16 @@
+table,field,max_absolute_difference
+calibration_entropy.csv,accuracy,0.0
+calibration_entropy.csv,ECE10,8.326672684688674e-17
+calibration_entropy.csv,ECE15,8.326672684688674e-17
+calibration_entropy.csv,ECE20,8.326672684688674e-17
+calibration_entropy.csv,entropy,5.551115123125783e-17
+calibration_entropy.csv,confidence,0.0
+mixed_calibration_entropy.csv,accuracy,0.0
+mixed_calibration_entropy.csv,ECE10,9.71445146547012e-17
+mixed_calibration_entropy.csv,ECE15,8.326672684688674e-17
+mixed_calibration_entropy.csv,ECE20,8.326672684688674e-17
+mixed_calibration_entropy.csv,entropy,5.551115123125783e-17
+mixed_calibration_entropy.csv,confidence,0.0
+bert_generation_metrics.csv,accuracy,0.0
+bert_generation_metrics.csv,JS_previous,9.71445146547012e-17
+bert_generation_metrics.csv,JS_initial,9.020562075079397e-17

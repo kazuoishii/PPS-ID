@@ -1,0 +1,9 @@
+{
+  "train_token_length_quantiles": [
+    21.0,
+    231.0,
+    623.1000000000004,
+    2467.0
+  ],
+  "train_truncation_fraction": 0.8934
+}

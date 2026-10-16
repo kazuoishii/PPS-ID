@@ -1,0 +1,13 @@
+{
+  "prediction_arrays": 154,
+  "margin_transitions": 140,
+  "original_margin_transitions": 90,
+  "cka_records": 150,
+  "reported_field_checks": 15,
+  "source_accuracy_checks": 154,
+  "all_checks_passed": true,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "matplotlib": "3.10.8"
+}
