@@ -1,0 +1,5081 @@
+{
+  "model_locations": 110,
+  "original_checkpoint_files": 105,
+  "shared_initial_teacher_references": 5,
+  "regime_counts": {
+    "cifar10_soft": 55,
+    "cifar10_mixed": 55
+  },
+  "all_prediction_files_exact_match": true,
+  "both_root_configurations_exact_match": true,
+  "verification": "All saved prediction files and root configurations exactly match the published experiment; all checkpoint parameter shapes match CNN32_64_FC256. CPU inference was rerun on all 110 model records (95 distinct serialized checkpoint hashes), 10,000 ordered test images each; see inference summary and changed-example records. No training rerun.",
+  "models": [
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "M0",
+      "checkpoint_path": "cifar10_mixed/seed_42/M0/model.pt",
+      "checkpoint_sha256": "e61883375d6cbaf8d289aed8975a514817b7dcd19b0fdea085ab9fd9f271f5e2",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "469fe94475816680bf9884faf5fb80f567b853f2b6d2259c402e3531c9ac7b2b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      },
+      "reused_teacher_checkpoint": "cifar10_soft/seed_42/M0/model.pt"
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_mixed/seed_42/fixed_M1/model.pt",
+      "checkpoint_sha256": "5ee9862ef0fe8cfc63d3d941c43a5781ce9f7e68863541cc887e0ecd714552eb",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "aae1e628e99e13d0634ab4446746e47c84c380b00f39bb4eadc285df537129c4",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_mixed/seed_42/fixed_M2/model.pt",
+      "checkpoint_sha256": "e83ef70100bfdf276f8f0369e92c58d1d2633df0070f96639638d81ba8798815",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "bdb8cbe0ccf2752e471adba83a6f3ed3d48b93bbe10242c2ca8f1a5b60e52ed6",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_mixed/seed_42/fixed_M3/model.pt",
+      "checkpoint_sha256": "b55da34b4cb1e6eb2b8fb24fcd36e47585cf3dbe8b67a9174e24135299e4dd88",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "1d8b6c31d45cfd2a30cf69341427e2187dad11c987268514f076e26ade0d10b0",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_mixed/seed_42/fixed_M4/model.pt",
+      "checkpoint_sha256": "9be6bb9904f8df903a25a3eb596d5a418e041245267fbf078000f98f64e62bda",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "0663f66609c21814ba8640ed1925bf51a4f1d9bed0774c1f7bea6f2b225fce06",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_mixed/seed_42/fixed_M5/model.pt",
+      "checkpoint_sha256": "0553b8a46abbf483bab77e465ba3192a00e89a7bc7ec7c628230b4d3fb3369a9",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "9b3fc6f18f8fb0c2949a0e6c19d1ef7565dde3c0e90c8d4dace9d7a5ec51e7f5",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_mixed/seed_42/recursive_M1/model.pt",
+      "checkpoint_sha256": "5ee9862ef0fe8cfc63d3d941c43a5781ce9f7e68863541cc887e0ecd714552eb",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "aae1e628e99e13d0634ab4446746e47c84c380b00f39bb4eadc285df537129c4",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_mixed/seed_42/recursive_M2/model.pt",
+      "checkpoint_sha256": "34234b9bbbc3e2f1de143b0ffdf21c74b6658f82b609ecd7f36b5e68d333e38b",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "ffc269442b74ca68ce80dd485da3a46074366a0c50282fa790b7812d73e44e5a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_mixed/seed_42/recursive_M3/model.pt",
+      "checkpoint_sha256": "728c0910b9ec1e93f20d8eb2984fade3e3bc87e9e7d45cd6e945c6cf6f6d193d",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "defba65aa9aa7bfeacef973e389a6053308b1da8fd77dd4dadb9b2799138c9a8",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_mixed/seed_42/recursive_M4/model.pt",
+      "checkpoint_sha256": "628ca13fe62d5091afab65bb32097f664ec66b3aa3d6170179de7c1c2d09360f",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "20384e920d45d2e18b28fc334cdb82681ef9f895a5e9d659da7026dcce3160ca",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 42,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_mixed/seed_42/recursive_M5/model.pt",
+      "checkpoint_sha256": "0c6db906f0d10ba8629671593e8ca1695f467d62a35365d88a2c9b6f65c52d35",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "344ef64e26b14006ac482b1c2394e1575a55adbaa3e8574f43c05bdf9fc4e731",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_42/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "M0",
+      "checkpoint_path": "cifar10_mixed/seed_43/M0/model.pt",
+      "checkpoint_sha256": "dd9fc4029954bf1318c9c5cb67f8df7e678177df4a4818f628db437078bb117c",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "05b8c557c199e002abb4b56c9f13f443bdd85890e055e204bd83c1f08edbe721",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      },
+      "reused_teacher_checkpoint": "cifar10_soft/seed_43/M0/model.pt"
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_mixed/seed_43/fixed_M1/model.pt",
+      "checkpoint_sha256": "62a47f80f6bfbf74b28ede475bbf10f79c7b73857f021d3cdd73ccd5d2259815",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "2896f0921b74c53113eb7d9efc4d9798c3d9902570e8301ab6dcef5a54cbd6cc",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_mixed/seed_43/fixed_M2/model.pt",
+      "checkpoint_sha256": "861a7e7ef66198cf4267553ebe66aeadaa90664a00f5e83d7ac3ee6c9277c64f",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "c6685754301fa82289cb631ed6afbd7d62547fa9ea5432b6fe7d688a371661b6",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_mixed/seed_43/fixed_M3/model.pt",
+      "checkpoint_sha256": "57cd5c52858f289f097d81dffbba5da9e7bbb5b3081a3041ac58da173b487baf",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "61e514a1fbc01c6a1770c0ad26e4dcd69688e197c632da30fe24f7c191bdc2cf",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_mixed/seed_43/fixed_M4/model.pt",
+      "checkpoint_sha256": "b1a4f702b38894860095a93acb189842022370d77526363e6aed457943a78de7",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "43ba77e3bb77dd4a9aee619baca33fe3d68a371070923dcf34203dc125fa7efa",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_mixed/seed_43/fixed_M5/model.pt",
+      "checkpoint_sha256": "b7abbf499949e21bb74c623b2d26bddc1b0198c2419cd42d19b1df9058bea97f",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "d0da476c9d372a52c7a7861415b2dbf1ecc7d347e7027f218d72d6c96870c9ec",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_mixed/seed_43/recursive_M1/model.pt",
+      "checkpoint_sha256": "62a47f80f6bfbf74b28ede475bbf10f79c7b73857f021d3cdd73ccd5d2259815",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "2896f0921b74c53113eb7d9efc4d9798c3d9902570e8301ab6dcef5a54cbd6cc",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_mixed/seed_43/recursive_M2/model.pt",
+      "checkpoint_sha256": "e32cd936e8205f2ab39795544399b6b7758736fd3addb2b9c3216d98abe5ac0c",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "d49c3fb6c5984915dfaa60dcdab516cb3866723bcc662df682a197df1dae927d",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_mixed/seed_43/recursive_M3/model.pt",
+      "checkpoint_sha256": "9a9c64b8e097a39d3250dc7794fda177780a9cef4427c76ae15cb4f78bf98ffc",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "949f9157741a242941fce5f604a4d7ae3c7967bda441f5864c652847d5e92518",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_mixed/seed_43/recursive_M4/model.pt",
+      "checkpoint_sha256": "652e5009273bd7037241348908dda5cebca90130c8891b2aa90acfe554649a52",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "296e6643336a5df97405678d81ad9a4c8e12a8e1a50bd8445ab9ed21ec592ed8",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 43,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_mixed/seed_43/recursive_M5/model.pt",
+      "checkpoint_sha256": "2beb415aeed5df7a879453e28ff824e2bd16861525a56c5cc2e848bc7e8ef11e",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "4e6427ea688b83d3d72285ce86c9a2e6ab9ef5d422cf0ee24c6ed81031157c92",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_43/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "M0",
+      "checkpoint_path": "cifar10_mixed/seed_44/M0/model.pt",
+      "checkpoint_sha256": "697ae72ec74121bdf456d19ea7923fab86630eab40e9622f62fb67d3763721fe",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "6dbe066ea25d4cc0df2fc3881fd821f187caff77e202fbda4a9b0fc3f0a6494d",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      },
+      "reused_teacher_checkpoint": "cifar10_soft/seed_44/M0/model.pt"
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_mixed/seed_44/fixed_M1/model.pt",
+      "checkpoint_sha256": "71a5325f46f15983c1892985a87d263bc288b3e42ae6eb909436f39f9547f227",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "a9f32c18ba2ea11b3f7cafc5a939339d5013e15580b09a5eda44491538515f71",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_mixed/seed_44/fixed_M2/model.pt",
+      "checkpoint_sha256": "b1877165da24ccd783cc2bdd0de7fceb0d1e2d7b6e3fd89e1b3768f25255347b",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "7a71e115e74a40cfaea5e409cedee8d488167eeff84390fc9b6582442cf73de0",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_mixed/seed_44/fixed_M3/model.pt",
+      "checkpoint_sha256": "8c66589bb0f9a54e3a2b45ea01fd72559e4c2849e498f64c5fc1a9882e25dbf0",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "78e264e77594a315b4defc9905214d25ab1a30cd33a9ca81d05dd505ac9d67a3",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_mixed/seed_44/fixed_M4/model.pt",
+      "checkpoint_sha256": "a1a6cda6ec0fac20abbb864707babc5763248db643d0154896ed908d531cb726",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "875267d5f5e64420bcab54afc99474db5f2dbc4f24b1630126c722b04cacf18f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_mixed/seed_44/fixed_M5/model.pt",
+      "checkpoint_sha256": "c483b3aa92df379dc19192255f4fddeb5729bfafaed1a3e69570be40413dd644",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "ca65c01de925ba4f2137802c7aed6c1d37ec0291aa726e8519e0ddb8a4584c67",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_mixed/seed_44/recursive_M1/model.pt",
+      "checkpoint_sha256": "71a5325f46f15983c1892985a87d263bc288b3e42ae6eb909436f39f9547f227",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "a9f32c18ba2ea11b3f7cafc5a939339d5013e15580b09a5eda44491538515f71",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_mixed/seed_44/recursive_M2/model.pt",
+      "checkpoint_sha256": "33bb42df0c8fa0d1b7aabdb9fc8f92fe62bba542c1a8258bac4849fa7a42c204",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "81b2aa672182c8347955807c214f3bab0f3c1f1110f48c142c7165295750501f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_mixed/seed_44/recursive_M3/model.pt",
+      "checkpoint_sha256": "8a02e659bc331f126d6aa61df1c788b4f33bbe6097c2665d01d912dffdceeb24",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "193a00ce0b5cfe41ce0c70ec91987bec4b3b07f341282dfbcd30b14c88b17f5f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_mixed/seed_44/recursive_M4/model.pt",
+      "checkpoint_sha256": "8c3a520bcb6f4e94c907a6c87b927d6d146b386cca94584cc2bf11bb39c033b6",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "4b0e8a6eebdd99d083bb2edf45b15d9b3c79e65bed778cd63c33f4c9ef0d1fad",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 44,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_mixed/seed_44/recursive_M5/model.pt",
+      "checkpoint_sha256": "5b3dd82920327d503704473e087ae628b234f118a3d1bc21cdd89c29ffda6400",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "6fefff00fe0bd4f0c5fe313c9ebfb28b72484e2c9d49cdaf0eee7fe76863e281",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_44/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "M0",
+      "checkpoint_path": "cifar10_mixed/seed_45/M0/model.pt",
+      "checkpoint_sha256": "8ae91d00d07814c2a22374f7aebf0ccb85b3d309101400482e0934423159a80d",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "d30de8f62e778556b7c17a4483e6bab3209024e5f1450e98ff436f98b2baa7a8",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      },
+      "reused_teacher_checkpoint": "cifar10_soft/seed_45/M0/model.pt"
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_mixed/seed_45/fixed_M1/model.pt",
+      "checkpoint_sha256": "d0546fe000da6c5578f4a7a58733007f6613b884960df19a424f1c457706a3a7",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "18492337a1c989d654e96edce6d1aa6084c39b1841a1e205b749a005250853b4",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_mixed/seed_45/fixed_M2/model.pt",
+      "checkpoint_sha256": "86092cb263d8956cd1bb3e120ede34c527cdef9415bb8e2f12bb18de9fc9e478",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "900dd9e2f8bea7d8516a3569d35bea0b2fbd2d68510eb2df867fde33aa0537f7",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_mixed/seed_45/fixed_M3/model.pt",
+      "checkpoint_sha256": "2cfc4943897abfa963e92c1ecff2abaef2b737d9da311f70a3aecc979a455ef0",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "3204e3fcf87ca2562ba4fa7ac165659482aa301162394eb2f3617e5644c2224f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_mixed/seed_45/fixed_M4/model.pt",
+      "checkpoint_sha256": "6cd7cbf875d4c018db06a616c0cfa424a44f62d7a2d20a844d5f85b98ffa3b18",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "84aff0c7f62080f4a129df6db4b7b513f6f71dccd243490e226840f934e5eda3",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_mixed/seed_45/fixed_M5/model.pt",
+      "checkpoint_sha256": "f3bf36b054ca905f8e9109a85117981e15b19efa2d4c49b67e33629d92435c5e",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "66c140bd809e10893dbb13a334602ae3f8b096199e5f2bdcf0d0593eaa639b9f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_mixed/seed_45/recursive_M1/model.pt",
+      "checkpoint_sha256": "d0546fe000da6c5578f4a7a58733007f6613b884960df19a424f1c457706a3a7",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "18492337a1c989d654e96edce6d1aa6084c39b1841a1e205b749a005250853b4",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_mixed/seed_45/recursive_M2/model.pt",
+      "checkpoint_sha256": "a9529c8ce8bdc3de26b7fa3f3ac7abcd752dce1972c5af7a48c1efab8ab735e5",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "c6c48daedd74290b1fbcb7bca86d9b876a22388f006f4f67707550b5f2b1de8e",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_mixed/seed_45/recursive_M3/model.pt",
+      "checkpoint_sha256": "1e0acbd149e286decb898c7861950c2702858a78133614a7f37da71fc75c9ee8",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "49e107f1b6dc1e68b53f41d910d78112200166797b14f0b04a0a05a72aef14d1",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_mixed/seed_45/recursive_M4/model.pt",
+      "checkpoint_sha256": "91a4ed8305fe22a90d3a34d4759d2eac69f6f7ae10660943b1c262c93f490076",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "b597c21d6727153836373db5a6bb901b4697bfe477b96434060e8a95c3bd12bc",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 45,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_mixed/seed_45/recursive_M5/model.pt",
+      "checkpoint_sha256": "f38c12d2578ec44694f698aafdb8ea535e12ac1a92d5738b6dbe5dec4fe46669",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "32ce387e360693c9ec72f8a695fb00ce798e60671b9945bdb2ecfe12acd4885a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_45/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "M0",
+      "checkpoint_path": "cifar10_mixed/seed_46/M0/model.pt",
+      "checkpoint_sha256": "a2a3151ab465db5321899840e459ec6fa9d1c7a8dd1d8b73fae11256db297f93",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "18709ad3d2939a9d639cccc3add6cbb206309fafbc9becbc79ccd3d620a24c06",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      },
+      "reused_teacher_checkpoint": "cifar10_soft/seed_46/M0/model.pt"
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_mixed/seed_46/fixed_M1/model.pt",
+      "checkpoint_sha256": "aaf91dd60005de025b1451fcb09c3a464b07feae11b88ed739e449140c4be19c",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "c6813987517aed8ae3f5ce70cbaa6d9628a683cc509e9135411f1be726e86a8f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_mixed/seed_46/fixed_M2/model.pt",
+      "checkpoint_sha256": "465321ddab106597fa3fb2007f99da74d372a135f89b72ea72e01f0f156f660e",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "5377ad6f5489b6224624b3f221dbd48782057acfcdfcef151aa51171c1141f66",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_mixed/seed_46/fixed_M3/model.pt",
+      "checkpoint_sha256": "972e0c13db2fe0956cac4a8659ea06284213fcdc15863279fd7b92e122f1eace",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "1b55bc32fbe1826240533a2381a1a7ac8709a87a8b59bc487fbc1250b7838b20",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_mixed/seed_46/fixed_M4/model.pt",
+      "checkpoint_sha256": "bb7d605aea227b1e18cda6f141ff17bc399fa6672b8733c66b9a1e22a7d7287a",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "506a5b1aabd4e6a6447994f295baeb0fb0d9f47902d0cb5c7130b7baca1ac5d2",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_mixed/seed_46/fixed_M5/model.pt",
+      "checkpoint_sha256": "2b5bd8b169d8d1aafe2bf3c6f6d0fc22c2d8880278df3252e22d8f29eca970f1",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "344c26a3e72d6c5f61c22d113cb48cf093ab6927c934dbaca43d7c554fcf6a5c",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_mixed/seed_46/recursive_M1/model.pt",
+      "checkpoint_sha256": "aaf91dd60005de025b1451fcb09c3a464b07feae11b88ed739e449140c4be19c",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "c6813987517aed8ae3f5ce70cbaa6d9628a683cc509e9135411f1be726e86a8f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_mixed/seed_46/recursive_M2/model.pt",
+      "checkpoint_sha256": "b4312ceba8670f7a4010953f256783ded3e833c207a525b0c37c569e39f90415",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "653a73980a974c82b2e50d0a2213551942f6986b33bc953f4c94d614cb05c9fb",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_mixed/seed_46/recursive_M3/model.pt",
+      "checkpoint_sha256": "f2a7668f760c8bfe86bbfb9c1d270668f491a42709c405be6c6ba7659319d69c",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "09ff738272f65c7d747ec8711bb7b8cae143a69b3de40267e9cc7be5b8688313",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_mixed/seed_46/recursive_M4/model.pt",
+      "checkpoint_sha256": "9132f8ca78caff1e9b7ab8d85f48cd151b6722fe2700fdd99d11d81b4f7ab5bb",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "3d5ee249d5b18762c2b2b075f6bb75c96ff4843ebc2dbf9bcc3964e4ee01e273",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_mixed",
+      "seed": 46,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_mixed/seed_46/recursive_M5/model.pt",
+      "checkpoint_sha256": "0ab78b011cd1ff2e18fdd86015c7a5812e957157b251e5da7debd831e24f6e60",
+      "checkpoint_bytes": 4286555,
+      "prediction_sha256": "63d6b27d9d8c425d79376ee78ea4add5b211adec69fe897afb227e7c0b1fdf0c",
+      "published_prediction_path": "revision_2026_10/data/cifar10_mixed/seed_46/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "M0",
+      "checkpoint_path": "cifar10_soft/seed_42/M0/model.pt",
+      "checkpoint_sha256": "e61883375d6cbaf8d289aed8975a514817b7dcd19b0fdea085ab9fd9f271f5e2",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "469fe94475816680bf9884faf5fb80f567b853f2b6d2259c402e3531c9ac7b2b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_soft/seed_42/fixed_M1/model.pt",
+      "checkpoint_sha256": "9f9c7ea0d61ff4524febd9fd26dcf7947846052ce5807c1098e82861bfbcac9a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "ccefab0399651f3221afe4debbf170359036d3ccac74aaad0fe359b434fce537",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_soft/seed_42/fixed_M2/model.pt",
+      "checkpoint_sha256": "4dc57e7369740eb17cb7563ae4dfd1944a5896766369a99048a8fe1364230f34",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "e09444e72ecaf68dbf01378c8657d549959c5824453c2c7c3229385c507053f7",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_soft/seed_42/fixed_M3/model.pt",
+      "checkpoint_sha256": "b93bd119baf773fc7e4c59d9391b67b427716b9e4ffc44f022e06773f3b4d29e",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "3a443f08cdc2836684d712667d941bcb0eb5199d6baa796a25efd22ebe66ab8f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_soft/seed_42/fixed_M4/model.pt",
+      "checkpoint_sha256": "525a2e5783dea380e1983efb539cb6976c26c6c6e95bdda7ab0a172de7fe454a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "f477a6f5bc08f357575966dc50e909fb9e78946f9576c2b21f2e2f80ac013468",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_soft/seed_42/fixed_M5/model.pt",
+      "checkpoint_sha256": "f0494776a27767ffd2a51f3dfce737403057f2ab8457de3b3f330e12357fc3b1",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "2d5744412b80c87fbc519e55c3cf3fc7616834d582fb343dbf9914bf8e203eac",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_soft/seed_42/recursive_M1/model.pt",
+      "checkpoint_sha256": "9f9c7ea0d61ff4524febd9fd26dcf7947846052ce5807c1098e82861bfbcac9a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "ccefab0399651f3221afe4debbf170359036d3ccac74aaad0fe359b434fce537",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_soft/seed_42/recursive_M2/model.pt",
+      "checkpoint_sha256": "a457ca4115a976033f1c24afe5443c2a06aecaaf3504e0e30fafdecbd7fa3bea",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "60df59aca0da0196215b3bda6639d112f9e5237d5ce635a3cbea7e2c180ccb84",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_soft/seed_42/recursive_M3/model.pt",
+      "checkpoint_sha256": "302b2bb73b6ea180cb1abf89ffb847e2d293e125f1b511cb370f40002e4df26c",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "7b2ff6cc8223e3b70747ceaefcf1b73ccd593f7a8178a90bdc7796eca321ea77",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_soft/seed_42/recursive_M4/model.pt",
+      "checkpoint_sha256": "e18e6891ac02ca609e38f043e4b925051ea50188adc699c198f7bbf76d357c4a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "826d38fd889693fdd14c749a87986207f9ea6ef6c49b1597694c6b14ede7508b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 42,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_soft/seed_42/recursive_M5/model.pt",
+      "checkpoint_sha256": "aec8f626a1d0aa47ff749df3e63b096a4cb9c9c69e3d44f06923460f2654461a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "7fd004f0d0055cfa8d056f48de9f8a4403c6518d858db632822dfda988cb756f",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_42/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "M0",
+      "checkpoint_path": "cifar10_soft/seed_43/M0/model.pt",
+      "checkpoint_sha256": "dd9fc4029954bf1318c9c5cb67f8df7e678177df4a4818f628db437078bb117c",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "05b8c557c199e002abb4b56c9f13f443bdd85890e055e204bd83c1f08edbe721",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_soft/seed_43/fixed_M1/model.pt",
+      "checkpoint_sha256": "93bc40463cd596c426cc755969685e2ea70fa060d979fbf79a0275e242d12201",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9b003d1cfa2d5fb0e6418e4e1831e41dbe89976dc0f9cd7f4c16c55af6d67025",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_soft/seed_43/fixed_M2/model.pt",
+      "checkpoint_sha256": "3694079ad42b9d42ed67014bbe02d3d497f93936254dc8ef09d539d79dfd944c",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "f46347c58e1fee055cc6aa5a64c274430e720cb59a7841ff233f3f659d92c543",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_soft/seed_43/fixed_M3/model.pt",
+      "checkpoint_sha256": "f0949bcac4aaec676834a329545860d4a22824777f8ac330ac6fa65e0e075036",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "6e505e4e2f0cd862630a21d186f529a4c0237e68c95161ae4e9e3eae9de978e0",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_soft/seed_43/fixed_M4/model.pt",
+      "checkpoint_sha256": "4e0ecd12a460a702d52b83ea4bc370d6d92fd2c69c1c31cd7d2e15616ccb1955",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "61a46cb070b9b9092a76d3f1e496f5513a985c83a51b5dddbdf77e10015c6d28",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_soft/seed_43/fixed_M5/model.pt",
+      "checkpoint_sha256": "b9fec976a53cafd5b2b8718b002c694bbeef7af1ed58abecad0f6cd4d10e32b5",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "7088260cbcad6b9baef06ca7e680b8f5a8dcb6a88cde8f913d3d2e4a9b60f36e",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_soft/seed_43/recursive_M1/model.pt",
+      "checkpoint_sha256": "93bc40463cd596c426cc755969685e2ea70fa060d979fbf79a0275e242d12201",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9b003d1cfa2d5fb0e6418e4e1831e41dbe89976dc0f9cd7f4c16c55af6d67025",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_soft/seed_43/recursive_M2/model.pt",
+      "checkpoint_sha256": "45f8943b5844a74c6221e4c8214607e372d3b3e1c9b8130ee4c2e49830892773",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "2b5c5bb575b274c8c8b1c70885536e8bb45793466e8dcc14955ee890adb43d66",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_soft/seed_43/recursive_M3/model.pt",
+      "checkpoint_sha256": "9bb9cfc666e35a4014fa1b36e97f8a0e562a19a0e264dc563313bf10c96ce6fc",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "5f5b0a3d2ed78d3b3b0108e8c5ec6124e234d421ea7d54257916b0dbf1276ea6",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_soft/seed_43/recursive_M4/model.pt",
+      "checkpoint_sha256": "0f909b6f7868bf8186eff28c2d6bc342a4c39106f3b1a8c062d4f02182ee0a84",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "ca0e575ea9a2c2709834e82ebbc94d825a48954467a80ffbddb7d07e8643e998",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 43,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_soft/seed_43/recursive_M5/model.pt",
+      "checkpoint_sha256": "e2767d3a531fd53c710a663ef0036049cf5735a5bd1eb4bc54788e9a3336f925",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "6a76627434a375ccca98ba39939f437b280e95e80f4732c10d3fdb8db0775814",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_43/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "M0",
+      "checkpoint_path": "cifar10_soft/seed_44/M0/model.pt",
+      "checkpoint_sha256": "697ae72ec74121bdf456d19ea7923fab86630eab40e9622f62fb67d3763721fe",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "6dbe066ea25d4cc0df2fc3881fd821f187caff77e202fbda4a9b0fc3f0a6494d",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_soft/seed_44/fixed_M1/model.pt",
+      "checkpoint_sha256": "19aa6c0ae80b05e6ba646942b468faf3664ff95853ba696d8101f9b6594d5e9b",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "b95fc0b11cdd41fa41fd23d684144bc706624342579e05526a5f9c16922ffa11",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_soft/seed_44/fixed_M2/model.pt",
+      "checkpoint_sha256": "1f41abacb7b6952ae7492e2d935f859d526bbdffecfa8465382a164a355144c4",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "846ae7d46205fa0e6a2f03687043aee17bce18e3d55665e23549995a197fd67d",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_soft/seed_44/fixed_M3/model.pt",
+      "checkpoint_sha256": "08974bd014860ace1477b0f74e636a35db71ccd453e645eb2c613bdc0ee5ade8",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "7b047baa23e3b33e79d0ba6d971df8ba232e123bdf311fba4cd6a7e16dfe1353",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_soft/seed_44/fixed_M4/model.pt",
+      "checkpoint_sha256": "078d7b7f3cc6cde7083dc2543aa31b3ad7de874029497601a1cbd8969317b1be",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9fe7ba07c1e08aa87946c391a5a5f08c2a393632a01c5e85b61bd8e817bd820b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_soft/seed_44/fixed_M5/model.pt",
+      "checkpoint_sha256": "c0f25557bdf63bdd85b45b49cbe8e11c5ce693face70447cb46f4e0cf1c842b0",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "8a7c62c6d3db5f5b0ab6a49dc8df7ae72388f5fc9eb400d60e01ce300e5b750b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_soft/seed_44/recursive_M1/model.pt",
+      "checkpoint_sha256": "19aa6c0ae80b05e6ba646942b468faf3664ff95853ba696d8101f9b6594d5e9b",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "b95fc0b11cdd41fa41fd23d684144bc706624342579e05526a5f9c16922ffa11",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_soft/seed_44/recursive_M2/model.pt",
+      "checkpoint_sha256": "6171e6400a5c120c19c7ed2aa81577b3fd69b0181d400ab84615d2960f7fb4cd",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "1e1a8983ba2351ca169dace47963844d1c6ff5730f427a0662a0377e8f5bca0e",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_soft/seed_44/recursive_M3/model.pt",
+      "checkpoint_sha256": "9fac16fc0e83364e13ae878e8dfd471996cc15dc9e872d0b516aad93e00ffba2",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "fd82f658ae5c92e033738fb4294946e92823c7a49fe287902258be6733f3c3e0",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_soft/seed_44/recursive_M4/model.pt",
+      "checkpoint_sha256": "39c483df604e8a8b18017cd548ca82965193b2034bbc14861b946c2b62234cde",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "948538c182de5faf41d32cf5ba3e8587574c721768d6ac84c1ff5c25494d8484",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 44,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_soft/seed_44/recursive_M5/model.pt",
+      "checkpoint_sha256": "0bb9bec16b518b54f7a23e964f45ab2b58d627813133c0b71cfa94ecbe588516",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "13421589e796ec66bf10e07c4492b6b602cc681f4fa3c7078597eda3aa1406ac",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_44/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "M0",
+      "checkpoint_path": "cifar10_soft/seed_45/M0/model.pt",
+      "checkpoint_sha256": "8ae91d00d07814c2a22374f7aebf0ccb85b3d309101400482e0934423159a80d",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "d30de8f62e778556b7c17a4483e6bab3209024e5f1450e98ff436f98b2baa7a8",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_soft/seed_45/fixed_M1/model.pt",
+      "checkpoint_sha256": "9139ec04c537def65864effe6f0a266dd51cd3a80edf3bf9a1be0b4d13a9d498",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "df68da6da9814fa24742f298db03ff261fc13f153d0dd4462ba5ba66664d327a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_soft/seed_45/fixed_M2/model.pt",
+      "checkpoint_sha256": "6da6a48111817e54808670944c456eef613cca909e8fef824fe756e98b4c379e",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "ec30594a104f3b2a9b411395c6e7ea45032ab935c859f0e136e4ecdf631391d3",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_soft/seed_45/fixed_M3/model.pt",
+      "checkpoint_sha256": "5bcc0c579c63c2e76ffcc895377b347b1485cfc9d53bdf3d83fccfda5155faca",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "a94c3c67ec69aed2509d577d7ab3c30fca698d80aacc173f3f85935d7fb56350",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_soft/seed_45/fixed_M4/model.pt",
+      "checkpoint_sha256": "b956abe7af65494878c1e8799fc2d7b45d41aec0ffca8113a2c5eb0a8e3a9dee",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "c89a4cd46f7f0445354536d717b5fe955356cd3c3088f87390d37867a88cc05d",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_soft/seed_45/fixed_M5/model.pt",
+      "checkpoint_sha256": "4cb9a7b69a4455811ed3ce86066fc0b7b44a3b6ebdb2f27a188c7c97ffe63e6a",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "f7301d96597705873a5b284a291fa75b66c73c14ad501364eb9f0dc14677e407",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_soft/seed_45/recursive_M1/model.pt",
+      "checkpoint_sha256": "9139ec04c537def65864effe6f0a266dd51cd3a80edf3bf9a1be0b4d13a9d498",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "df68da6da9814fa24742f298db03ff261fc13f153d0dd4462ba5ba66664d327a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_soft/seed_45/recursive_M2/model.pt",
+      "checkpoint_sha256": "6d08d7b425e42f495a06b83cf6cb752a08754b1225e75442c97ffe8378e672e6",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "521280c67fe2bf6b2493cb79587887bcd02ad69040ebb2bc7d941640be8246b1",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_soft/seed_45/recursive_M3/model.pt",
+      "checkpoint_sha256": "608e9766266a48d689be6d44eb5db1f7c0ea1d2030d5f9fe4f49f5372179f332",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "207af60c224f4fce889fc4bac8ad3716682df5a5a6eed400942c988ae71997ae",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_soft/seed_45/recursive_M4/model.pt",
+      "checkpoint_sha256": "e223f5dc164a2225f38dee2e8eb6fcf80e0be11657db0f02a70a973ef4dba7d2",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "31a4b3aeea829809a9b74c54ccc8bd33e79a094a7d8fdda8948bb852d26ba3bf",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 45,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_soft/seed_45/recursive_M5/model.pt",
+      "checkpoint_sha256": "381e7022a96034717df967312763b06d576c5f0e0ffc27cc26689c47c14ced14",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9a7a0d123c932496872d4b3c92b570b8153d9d2d0c94f351e576899776cd658a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_45/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "M0",
+      "checkpoint_path": "cifar10_soft/seed_46/M0/model.pt",
+      "checkpoint_sha256": "a2a3151ab465db5321899840e459ec6fa9d1c7a8dd1d8b73fae11256db297f93",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "18709ad3d2939a9d639cccc3add6cbb206309fafbc9becbc79ccd3d620a24c06",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/M0/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "fixed_M1",
+      "checkpoint_path": "cifar10_soft/seed_46/fixed_M1/model.pt",
+      "checkpoint_sha256": "1ee483b42e2acc8a955537660d061067ca03a026ae106ad9ff9806895625513b",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9d1f37b1bfa60c7251c18f1918501784c060eb9f5f0d94b7cd013630e15ca84a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/fixed_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "fixed_M2",
+      "checkpoint_path": "cifar10_soft/seed_46/fixed_M2/model.pt",
+      "checkpoint_sha256": "64334631a56c247805f5b97cdcd76bc8431109f896fbb482e144fcc7467b9a1e",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "607feed96edd9298253a719c85b126865e97d7d68e0e702f6e3712125311a7bc",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/fixed_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "fixed_M3",
+      "checkpoint_path": "cifar10_soft/seed_46/fixed_M3/model.pt",
+      "checkpoint_sha256": "ccff337b9f9e8eb801b4631ec6832917bcd7220c76b7dac2245fd6bff70d4e54",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "98e2b74a332e067b75f63084439b1ea28fd2cf4c74afbb4ccf179dbd5c2c50f9",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/fixed_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "fixed_M4",
+      "checkpoint_path": "cifar10_soft/seed_46/fixed_M4/model.pt",
+      "checkpoint_sha256": "6b2ec13a5b63a22bf4ca11b34742c1e830db855e674113854166a9569730bf93",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "0f985e122ec08c3ecb4054ae32b4df795895638a88c2039c8094bb757de965e0",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/fixed_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "fixed_M5",
+      "checkpoint_path": "cifar10_soft/seed_46/fixed_M5/model.pt",
+      "checkpoint_sha256": "de5febe8cfac8666cadede873df06099e4f778512c610d4a88cf039c361a69b8",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "8d0219fc3a450ac27d699944f832b747acd29287369590f4d344526a4c7b1d8a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/fixed_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "recursive_M1",
+      "checkpoint_path": "cifar10_soft/seed_46/recursive_M1/model.pt",
+      "checkpoint_sha256": "1ee483b42e2acc8a955537660d061067ca03a026ae106ad9ff9806895625513b",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "9d1f37b1bfa60c7251c18f1918501784c060eb9f5f0d94b7cd013630e15ca84a",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/recursive_M1/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "recursive_M2",
+      "checkpoint_path": "cifar10_soft/seed_46/recursive_M2/model.pt",
+      "checkpoint_sha256": "8c00dfd16567d67cd140557de90be69b1baf391a88c6b98385f4546852a72f87",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "ebf76561580746cd3790e7035c986eb8b719ddb60eb5695f3ff667e96978bb9b",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/recursive_M2/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "recursive_M3",
+      "checkpoint_path": "cifar10_soft/seed_46/recursive_M3/model.pt",
+      "checkpoint_sha256": "a3d82689a08f9db72344ee67d18637768be3eaf4343a5ccda441e9b0022ff074",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "59ee30fe352259d8107ed7643f13719a0f67e11834e9b82902544c2446c21d0c",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/recursive_M3/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "recursive_M4",
+      "checkpoint_path": "cifar10_soft/seed_46/recursive_M4/model.pt",
+      "checkpoint_sha256": "4ac89a63fe88cd52138bae2d959056c9bcacd982551108626f905a767b1abd29",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "e86fad8ea014dc0679ce19d607ac4235bcf63262603ceb3e16f0d41b64adce60",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/recursive_M4/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "regime": "cifar10_soft",
+      "seed": 46,
+      "model": "recursive_M5",
+      "checkpoint_path": "cifar10_soft/seed_46/recursive_M5/model.pt",
+      "checkpoint_sha256": "b4135c28b557276a84bc9b67cd6525854372e695bfb5cecf5a8f4fabcd9fd7bf",
+      "checkpoint_bytes": 4286065,
+      "prediction_sha256": "e5e54f8c6340d42fb60b13dcbecdfcde12287c6ba8f0cc71f0b8e98824c8b7af",
+      "published_prediction_path": "revision_2026_10/data/cifar10_soft/seed_46/recursive_M5/observations.npz",
+      "prediction_file_exact_match": true,
+      "architecture": "CNN32_64_FC256",
+      "parameter_shapes": {
+        "0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "0.bias": [
+          32
+        ],
+        "3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "3.bias": [
+          64
+        ],
+        "7.weight": [
+          256,
+          4096
+        ],
+        "7.bias": [
+          256
+        ],
+        "9.weight": [
+          10,
+          256
+        ],
+        "9.bias": [
+          10
+        ]
+      }
+    }
+  ],
+  "distinct_serialized_checkpoint_hashes": 95,
+  "published_prediction_snapshot_commit": "1104c46891287b54050bf93b93d09e7af5ff35fd"
+}

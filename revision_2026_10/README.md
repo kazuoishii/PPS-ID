@@ -73,7 +73,7 @@ This archive does not establish asymptotic convergence, a causal error-propagati
 
 ## Public repository organization
 
-This directory is published as `revision_2026_10/` in the PPS-ID repository. The repository root retains the original experiment files. All 413 original supplementary files are represented here, together with the additional three-update diagnostic records and audit. Two SST-2 configuration files have their local `/Users/...` output prefixes replaced by `CHECKPOINT_ROOT/`; recorded experimental settings are otherwise retained. `AVAILABILITY_TEXT.txt` has been updated for repository use, and this README and integrity manifest have been updated accordingly. All 44 BERT checkpoints are publicly available separately at https://github.com/kazuoishii/PPS-ID/releases/tag/bert-checkpoints-2026-10. CIFAR-10 checkpoints are not supplied. Both three-update and recovered 100-update diagnostic records are included.
+This directory is published as `revision_2026_10/` in the PPS-ID repository. The repository root retains the original experiment files. All 413 original supplementary files are represented here, together with the additional three-update diagnostic records and audit. Two SST-2 configuration files have their local `/Users/...` output prefixes replaced by `CHECKPOINT_ROOT/`; recorded experimental settings are otherwise retained. `AVAILABILITY_TEXT.txt` has been updated for repository use, and this README and integrity manifest have been updated accordingly. All 44 BERT checkpoints are publicly available separately at https://github.com/kazuoishii/PPS-ID/releases/tag/bert-checkpoints-2026-10. CIFAR-10 checkpoints covering all 110 model records are publicly available separately in checkpoints/cifar10/. Both three-update and recovered 100-update diagnostic records are included.
 
 The public third-party datasets and pretrained BERT model must be obtained from their original providers, under their respective terms. No raw image or review text is redistributed.
 
@@ -82,3 +82,7 @@ The public third-party datasets and pretrained BERT model must be obtained from 
 See [diagnostics/README.md](diagnostics/README.md) for two three-update trials per backend and run `python code/audit_prefix_diagnostics.py` to recompute the recorded comparisons. All comparisons pass. The recovered 100-update records and their separate audit are in `diagnostics/100_update/`.
 
 Recovered 100-update records: diagnostics/100_update/; run `python code/audit_100_update_diagnostics.py`. This verifies saved comparisons, not a training rerun.
+
+## Recovered CIFAR-10 checkpoints and CPU inference
+
+See [checkpoint validation](checkpoint_validation/CIFAR_CHECKPOINTS.md) for all 110 model records, SHA-256 mapping, CPU inference comparisons, and the single zero-margin tie difference. The weights are in the repository directory `checkpoints/cifar10/` and are not embedded in this supplement. BERT inference was not rerun.

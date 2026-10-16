@@ -1,0 +1,25 @@
+[
+  {
+    "regime": "cifar10_soft",
+    "seed": 43,
+    "model": "fixed_M3",
+    "test_index": 8578,
+    "true_label": 2,
+    "saved_prediction": 2,
+    "rerun_prediction": 5,
+    "saved_top_two_classes": [
+      2,
+      5
+    ],
+    "saved_top_two_probabilities": [
+      0.4985714256763458,
+      0.4985714256763458
+    ],
+    "saved_top_two_margin": 0.0,
+    "rerun_probabilities_for_saved_top_two_classes": [
+      0.4985691010951996,
+      0.4985738694667816
+    ],
+    "max_probability_abs_difference_for_example": 2.4437904357910156e-06
+  }
+]

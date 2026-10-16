@@ -43,7 +43,7 @@ Under **soft-only CIFAR-10 supervision**, final fixed-minus-recursive accuracy a
 
 ## Availability limits
 
-All 44 BERT checkpoints are publicly available in the release linked below; CIFAR-10 checkpoints remain unavailable. The CKA plot can be regenerated from the 150 records; recomputing CKA from hidden features requires the original 55 soft-only CIFAR-10 checkpoints and CIFAR-10 images. The BERT checkpoint download location is linked below. Separate three-update CPU/MPS repeated-trial records and a successful saved-record comparison audit are provided in [diagnostics](revision_2026_10/diagnostics/README.md). Recovered 100-update logs and a separate comparison audit are now supplied (see below). Public datasets and pretrained BERT must be obtained from their original providers. No raw images or review text are redistributed.
+All 44 BERT checkpoints are publicly available in the release linked below; CIFAR-10 checkpoints covering all 110 model records are public in [checkpoints/cifar10](checkpoints/cifar10/README.md). The CKA plot can be regenerated from the 150 records; recomputing CKA from hidden features requires the original 55 soft-only CIFAR-10 checkpoints and CIFAR-10 images. The BERT checkpoint download location is linked below. Separate three-update CPU/MPS repeated-trial records and a successful saved-record comparison audit are provided in [diagnostics](revision_2026_10/diagnostics/README.md). Recovered 100-update logs and a separate comparison audit are now supplied (see below). Public datasets and pretrained BERT must be obtained from their original providers. No raw images or review text are redistributed.
 
 ## Publication and license
 
@@ -55,4 +55,8 @@ Contact: Kazuo Ishii, kishii@rs.sus.ac.jp.
 
 ## Public BERT checkpoints and recovered diagnostics
 
-All 44 BERT checkpoints (SST-2 and IMDb) and SHA-256 metadata are available at https://github.com/kazuoishii/PPS-ID/releases/tag/bert-checkpoints-2026-10 . CIFAR-10 checkpoints remain unavailable. Recovered original 100-update CPU/MPS trial records are in revision_2026_10/diagnostics/100_update/; run code/audit_100_update_diagnostics.py from the revision directory. All recorded comparisons match recomputation, including the manuscript maxima. This is a saved-record audit, not a training rerun. 
+All 44 BERT checkpoints (SST-2 and IMDb) and SHA-256 metadata are available at https://github.com/kazuoishii/PPS-ID/releases/tag/bert-checkpoints-2026-10 . CIFAR-10 checkpoints covering all 110 model records are public in [checkpoints/cifar10](checkpoints/cifar10/README.md). Recovered original 100-update CPU/MPS trial records are in revision_2026_10/diagnostics/100_update/; run code/audit_100_update_diagnostics.py from the revision directory. All recorded comparisons match recomputation, including the manuscript maxima. This is a saved-record audit, not a training rerun. 
+
+## CIFAR-10 checkpoints and CPU inference validation
+
+[All checkpoints and SHA-256 mapping](checkpoints/cifar10/README.md) cover all 110 soft-only/mixed-label model records, including 5 shared M0 teachers. There are 105 original checkpoint files, represented by 95 distinct serialized hashes. All saved prediction archives and configurations match the published experiment. CPU inference on the ordered 10,000-image test set gives a maximum probability difference of 6.14e-6 and reproduces 109/110 accuracies exactly; one saved zero-margin tie changes one prediction (seed 43 fixed_M3: 72.97% to 72.96%). All M5 accuracies agree. [Audit code and detailed records](revision_2026_10/checkpoint_validation/CIFAR_CHECKPOINTS.md) are supplied. No training or BERT inference was rerun. Original CUDA results are retained.
