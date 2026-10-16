@@ -31,11 +31,18 @@ def digest(path):
     return h.hexdigest()
 
 
-def release():
-    p = gh('api', f'repos/{REPO}/releases/tags/{TAG}', check=False)
-    if p.returncode:
-        raise RuntimeError(p.stderr.strip())
-    return json.loads(p.stdout)
+def release(missing_ok=False):
+    # GitHub's /releases/tags endpoint does not resolve an unpublished draft.
+    # Authenticated release listings include drafts; use their stable IDs.
+    p = gh('api', '--paginate', '--slurp', f'repos/{REPO}/releases?per_page=100')
+    matches = [r for page in json.loads(p.stdout) for r in page if r['tag_name'] == TAG]
+    if len(matches) > 1:
+        raise RuntimeError('Multiple releases have the requested tag; nothing was modified.')
+    if matches:
+        return matches[0]
+    if missing_ok:
+        return None
+    raise RuntimeError('The checkpoint release was not found in the authenticated release listing.')
 
 
 def assets(r):
@@ -101,10 +108,7 @@ def main():
         raise RuntimeError('At least 2 GiB of free disk space is needed for one temporary model archive.')
     notes = out/'CHECKPOINT_README.md'
     notes.write_text('''# PPS-ID BERT checkpoints\n\n44 checkpoints: SST-2 and IMDb, seeds 42/43, M0 and recursive/fixed M1--M5. Each tar contains a model.safetensors, the available model/tokenizer files, and its matching saved prediction archive. Pairing was checked by SHA-256 against the public revision prediction files. Model inference was not rerun by this publication script. CHECKPOINT_MANIFEST.json records file and archive hashes.\n\nExtract one tar into a separate directory; model files are in model/. Obtain datasets from their original providers. These are BERT checkpoints, not the 55 CIFAR-10 checkpoints needed for the reported CKA recomputation. The separately reported 100-update diagnostic raw logs are not included.\n\nAssociated analysis materials: https://github.com/kazuoishii/PPS-ID/tree/64b2ea1cfe1c7698f8fd13a821af94291b778a7c/revision_2026_10\n''')
-    p = gh('api', f'repos/{REPO}/releases/tags/{TAG}', check=False)
-    if p.returncode:
-        if '404' not in p.stderr:
-            raise RuntimeError(p.stderr.strip())
+    if release(missing_ok=True) is None:
         gh('release','create',TAG,'-R',REPO,'--draft','--target',TARGET,
            '--title','PPS-ID BERT checkpoints: SST-2 and IMDb','--notes-file',str(notes))
     r = release()
