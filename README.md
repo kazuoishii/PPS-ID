@@ -43,7 +43,7 @@ Under **soft-only CIFAR-10 supervision**, final fixed-minus-recursive accuracy a
 
 ## Availability limits
 
-Trained model checkpoints were not supplied in the supplement and are **not included**. The CKA plot can be regenerated from the 150 records; recomputing CKA from hidden features requires the original 55 soft-only CIFAR-10 checkpoints and CIFAR-10 images. No public checkpoint download location has been supplied. Raw short-prefix MPS repeatability diagnostic logs are unavailable; that diagnostic is not represented as independently reproduced. Public datasets and pretrained BERT must be obtained from their original providers. No raw images or review text are redistributed.
+Trained model checkpoints were not supplied in the supplement and are **not included**. The CKA plot can be regenerated from the 150 records; recomputing CKA from hidden features requires the original 55 soft-only CIFAR-10 checkpoints and CIFAR-10 images. No public checkpoint download location has been supplied. Separate three-update CPU/MPS repeated-trial records and a successful saved-record comparison audit are provided in [diagnostics](revision_2026_10/diagnostics/README.md). The original 100-update diagnostic logs remain unavailable; the shorter records do not verify its numerical maxima. Public datasets and pretrained BERT must be obtained from their original providers. No raw images or review text are redistributed.
 
 ## Publication and license
 

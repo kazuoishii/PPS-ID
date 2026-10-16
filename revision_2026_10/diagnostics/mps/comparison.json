@@ -1,0 +1,45 @@
+{
+  "device": "mps",
+  "source": "CHECKPOINT_ROOT/bert_5gen_seed42_mps",
+  "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "torch": "2.13.0",
+  "seconds": 7.358913750154898,
+  "comparison": {
+    "initial_weights_equal": true,
+    "teacher_weights_equal": true,
+    "initial_rng_equal": true,
+    "steps": [
+      {
+        "step": 0,
+        "batch_equal": true,
+        "rng_before_equal": true,
+        "weights_after_equal": false,
+        "student_logits_max_abs_difference": 0.0,
+        "teacher_probabilities_max_abs_difference": 0.0,
+        "classifier_gradient_max_abs_difference": 0.0,
+        "loss_abs_difference": 0.0
+      },
+      {
+        "step": 1,
+        "batch_equal": true,
+        "rng_before_equal": true,
+        "weights_after_equal": false,
+        "student_logits_max_abs_difference": 0.0,
+        "teacher_probabilities_max_abs_difference": 0.0,
+        "classifier_gradient_max_abs_difference": 0.0,
+        "loss_abs_difference": 0.0
+      },
+      {
+        "step": 2,
+        "batch_equal": true,
+        "rng_before_equal": true,
+        "weights_after_equal": false,
+        "student_logits_max_abs_difference": 2.682209014892578e-07,
+        "teacher_probabilities_max_abs_difference": 0.0,
+        "classifier_gradient_max_abs_difference": 9.5367431640625e-07,
+        "loss_abs_difference": 9.5367431640625e-07
+      }
+    ]
+  },
+  "note": "A short prefix diagnostic; agreement here does not establish full-training determinism."
+}

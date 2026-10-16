@@ -1,0 +1,96 @@
+{
+  "all_checks_passed": true,
+  "scope": "saved three-update records only; not a training rerun or verification of the separately reported 100-update diagnostic",
+  "backends": {
+    "cpu": {
+      "updates_per_trial": 3,
+      "trials": 2,
+      "comparison_matches": true,
+      "comparison": {
+        "initial_weights_equal": true,
+        "teacher_weights_equal": true,
+        "initial_rng_equal": true,
+        "steps": [
+          {
+            "step": 0,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": true,
+            "student_logits_max_abs_difference": 0.0,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 0.0,
+            "loss_abs_difference": 0.0
+          },
+          {
+            "step": 1,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": true,
+            "student_logits_max_abs_difference": 0.0,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 0.0,
+            "loss_abs_difference": 0.0
+          },
+          {
+            "step": 2,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": true,
+            "student_logits_max_abs_difference": 0.0,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 0.0,
+            "loss_abs_difference": 0.0
+          }
+        ]
+      },
+      "max_logit_difference": 0.0,
+      "max_loss_difference": 0.0,
+      "max_head_gradient_difference": 0.0
+    },
+    "mps": {
+      "updates_per_trial": 3,
+      "trials": 2,
+      "comparison_matches": true,
+      "comparison": {
+        "initial_weights_equal": true,
+        "teacher_weights_equal": true,
+        "initial_rng_equal": true,
+        "steps": [
+          {
+            "step": 0,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": false,
+            "student_logits_max_abs_difference": 0.0,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 0.0,
+            "loss_abs_difference": 0.0
+          },
+          {
+            "step": 1,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": false,
+            "student_logits_max_abs_difference": 0.0,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 0.0,
+            "loss_abs_difference": 0.0
+          },
+          {
+            "step": 2,
+            "batch_equal": true,
+            "rng_before_equal": true,
+            "weights_after_equal": false,
+            "student_logits_max_abs_difference": 2.682209014892578e-07,
+            "teacher_probabilities_max_abs_difference": 0.0,
+            "classifier_gradient_max_abs_difference": 9.5367431640625e-07,
+            "loss_abs_difference": 9.5367431640625e-07
+          }
+        ]
+      },
+      "max_logit_difference": 2.682209014892578e-07,
+      "max_loss_difference": 9.5367431640625e-07,
+      "max_head_gradient_difference": 9.5367431640625e-07
+    }
+  }
+}

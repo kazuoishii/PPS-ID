@@ -34,4 +34,4 @@ Use the resolved checkpoint revision in `protocols/imdb/imdb_kd_5gen/model_revis
 
 ## Short-prefix BERT diagnostic
 
-`code/diagnose_bert_m1.py` is included as supplied. Its recorded conclusions were reported in a separate draft; no raw diagnostic log is included here, and this supplement does not mark the diagnostic as independently reproduced. Follow its argument parser for any new diagnostic run and save complete logs.
+`code/diagnose_bert_m1.py` is included as supplied. Its recorded conclusions were reported in a separate draft; the original 100-update raw logs are not included. Separate three-update CPU/MPS trial records and their audit are now supplied in `diagnostics/`; run `python code/audit_prefix_diagnostics.py` to verify their recorded comparisons. Training was not rerun. Follow its argument parser for any new diagnostic run and save complete logs.
