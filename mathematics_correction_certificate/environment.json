@@ -1,0 +1,5 @@
+{
+  "validation_python": "3.12.14",
+  "validation_numpy": "2.3.5",
+  "validation_matplotlib": "3.10.8"
+}

@@ -1,0 +1,8 @@
+{
+  "q": 0.6584789484624082,
+  "dc": 0.16603716425762416,
+  "network_crossing": 5,
+  "envelope_crossing": 10,
+  "certified_time": 60,
+  "boundary_max_error": 0.0
+}
