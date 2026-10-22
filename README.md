@@ -6,7 +6,7 @@ PPS-ID assesses observable-state change separately from changes in specified tas
 
 ## Complete revision experiments and reproducibility materials
 
-The [revision_2026_10](revision_2026_10/) directory contains the reproducibility supplement for the revised Information manuscript **information-4637444**:
+The [revision_2026_10](revision_2026_10/) directory contains the reproducibility supplement for the published *Information* article ([DOI: 10.3390/info17111056](https://doi.org/10.3390/info17111056); manuscript **information-4637444**):
 
 - CIFAR-10 soft-only distillation: five seeds, five student generations, recursive and fixed teachers.
 - CIFAR-10 mixed-label distillation: the same five seeds and generations, alpha=0.5.
@@ -47,7 +47,9 @@ All 44 BERT checkpoints are publicly available in the release linked below; CIFA
 
 ## Publication and license
 
-Revised manuscript submitted to *Information*, manuscript information-4637444. Preprint: [Zenodo](https://zenodo.org/records/23120094).
+Ishii, K., Gautam, B. P., & Javaid, S. (2026). Platonic Projection Structures-Based Information Dynamics (PPS-ID): Recursive Transformation of Observable Information. *Information, 17*(11), 1056. https://doi.org/10.3390/info17111056
+
+Published article: [Publisher page](https://www.mdpi.com/2078-2489/17/11/1056). Preprint: [Zenodo (latest version)](https://doi.org/10.5281/zenodo.23120093).
 
 The MIT license in `LICENSE` applies to software code and usage documentation. Manuscript, figures and derived experimental results are licensed under CC BY 4.0 as specified in the Zenodo record; third-party datasets and models retain their own terms.
 
