@@ -1,0 +1,56 @@
+[
+  {
+    "a": 0.2,
+    "gamma": 0.4,
+    "kappa": 1.0,
+    "D": 0.01,
+    "crossing": 9,
+    "certified_time": 801,
+    "max_envelope_violation": 0.0
+  },
+  {
+    "a": 0.2,
+    "gamma": 0.4,
+    "kappa": 1.0,
+    "D": 0.3,
+    "crossing": 3,
+    "certified_time": 27,
+    "max_envelope_violation": 0.0
+  },
+  {
+    "a": 0.2,
+    "gamma": 0.8,
+    "kappa": 1.0,
+    "D": 0.01,
+    "crossing": 41,
+    "certified_time": 801,
+    "max_envelope_violation": 0.0
+  },
+  {
+    "a": 0.2,
+    "gamma": 0.8,
+    "kappa": 1.0,
+    "D": 0.3,
+    "crossing": 5,
+    "certified_time": 27,
+    "max_envelope_violation": 0.0
+  },
+  {
+    "a": 0.0,
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "D": 0.01,
+    "crossing": 37,
+    "certified_time": 801,
+    "max_envelope_violation": 0.0
+  },
+  {
+    "a": 0.0,
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "D": 0.3,
+    "crossing": 3,
+    "certified_time": 27,
+    "max_envelope_violation": 0.0
+  }
+]

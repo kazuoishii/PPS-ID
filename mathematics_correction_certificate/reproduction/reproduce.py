@@ -1,11 +1,19 @@
-"""Independent reconstruction from manuscript; not the missing original code."""
+"""Reproduce model calculations from archived inputs by default. See README.md."""
 from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import csv,json
-P=Path(__file__).resolve().parent
+import argparse
+SOURCE=Path(__file__).resolve().parent
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--output-dir', type=Path, default=SOURCE/'generated', help='Separate output directory; archived inputs and results are not overwritten.')
+parser.add_argument('--regenerate-inputs', action='store_true', help='Regenerate inputs using the recorded RNG API and draw order; save only to output directory.')
+args=parser.parse_args()
+P=args.output_dir.resolve()
+if P==SOURCE: raise ValueError('Use a separate output directory to preserve archived results.')
+P.mkdir(parents=True,exist_ok=True)
 def sig(x): return 1/(1+np.exp(-x))
 def solve(x,d,g=.4,W=None,tol=1e-10):
     for t in range(20000):
@@ -49,10 +57,21 @@ z=np.linspace(-8,2,n);conservative_gap=1e9
 for t in range(101):
     floor=.2**t*(-8)+(1-.2**t)*.375;conservative_gap=min(conservative_gap,z.min()-floor)
     z=.2*z+1.2*(modular@np.tanh(z))+np.linspace(-.5,.2,n)+2
-# Explicit reconstruction choices: NumPy default_rng; integer Bernoulli truth draw;
-# episode-major normal draw; mask drawn last. The original RNG is unavailable.
-rng=np.random.default_rng(20261006);h=rng.integers(0,2,1000);X=rng.normal((2*h[:,None]-1)*.5,1,size=(1000,6));mask=rng.random((n,6))<.65;mask[:,0]=True
-np.savez(P/'inputs.npz',h=h,X=X,mask=mask,**graphs)
+# Default replication uses authoritative archived arrays, without modifying them.
+if args.regenerate_inputs:
+    rng=np.random.default_rng(20261006)
+    h=rng.integers(0,2,1000)
+    X=rng.normal((2*h[:,None]-1)*.5,1,size=(1000,6))
+    mask=rng.random((n,6))<.65
+    mask[:,0]=True
+    np.savez(P/'inputs.npz',h=h,X=X,mask=mask,**graphs)
+else:
+    with np.load(SOURCE/'inputs.npz', allow_pickle=False) as archive:
+        h=archive['h']; X=archive['X']; mask=archive['mask']
+        graphs={name:archive[name] for name in ['Complete','Cycle','Modular']}
+    assert h.shape==(1000,) and X.shape==(1000,6) and mask.shape==(20,6)
+    for W in graphs.values():
+        assert W.shape==(20,20) and np.all(W>=0) and np.allclose(W.sum(axis=1),1)
 graphs['Cycle_reverse']=np.roll(np.eye(n),1,axis=1)
 b=.1*(X@mask.T);reuse=b+.4*X[:,0,None];rows=[];paired=[];boundgap=1e9
 for name,W in graphs.items():

@@ -1,0 +1,11 @@
+{
+  "delta": 0.30000000000000004,
+  "M": 0.37500000000000006,
+  "network_crossing": 2,
+  "bound_crossing": 2,
+  "L1": -1.3,
+  "L2": 0.03999999999999998,
+  "minimum_bound_gap": 0.0,
+  "checked_times": 101,
+  "updates": 100
+}
