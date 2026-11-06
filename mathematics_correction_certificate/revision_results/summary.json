@@ -1,0 +1,44 @@
+{
+  "paired_interval_method": "Two-sided paired episode Student t intervals, df=999; marginal, conditional on saved mask/graphs; not adjusted for multiplicity. Agents and graphs are not independent replicates.",
+  "sensitivity_runs": 315,
+  "sensitivity_all_checks_passed": true,
+  "switching": [
+    {
+      "schedule": "periodic",
+      "steps": 300,
+      "network_crossing": 5,
+      "envelope_crossing": 10,
+      "certified_time": 60,
+      "min_state_gap": 0.0,
+      "max_brier_excess": 0.0
+    },
+    {
+      "schedule": "long_dwell",
+      "steps": 300,
+      "network_crossing": 5,
+      "envelope_crossing": 10,
+      "certified_time": 60,
+      "min_state_gap": 0.0,
+      "max_brier_excess": 0.0
+    },
+    {
+      "schedule": "random",
+      "steps": 300,
+      "network_crossing": 5,
+      "envelope_crossing": 10,
+      "certified_time": 60,
+      "min_state_gap": 0.0,
+      "max_brier_excess": 0.0
+    },
+    {
+      "schedule": "disconnected",
+      "steps": 300,
+      "network_crossing": 7,
+      "envelope_crossing": 10,
+      "certified_time": 60,
+      "min_state_gap": 0.0,
+      "max_brier_excess": 0.0
+    }
+  ],
+  "seed": 20261103
+}

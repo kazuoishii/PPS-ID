@@ -1,0 +1,5 @@
+schedule,steps,network_crossing,envelope_crossing,certified_time,min_state_gap,max_brier_excess
+periodic,300,5,10,60,0.0,0.0
+long_dwell,300,5,10,60,0.0,0.0
+random,300,5,10,60,0.0,0.0
+disconnected,300,7,10,60,0.0,0.0

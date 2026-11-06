@@ -1,15 +1,3 @@
-# Sharp Error-Correction Certificates in Recursive Information Dynamics
-
-## Submission snapshot — 25 October 2026
-
-Author: Kazuo Ishii, Suwa University of Science.
-Manuscript: *Sharp Error-Correction Certificates in Recursive Information Dynamics: A Saturating Switching-Network Model*.
-Submitted to Mathematics on 25 October 2026, manuscript ID mathematics-4685224. This is a submission snapshot; journal acceptance and peer review completion are not implied.
-
-The files below reproduce the complete supplementary archive submitted with the manuscript. The numerical files and scripts retain their submitted bytes. This README adds publication context to the submitted reproduction instructions.
-
-This directory is separate from the CIFAR-10/BERT PPS-ID experiments elsewhere in the repository. These are synthetic calculations, not empirical LLM experiments.
-
 # Complete numerical supplement (2026-10-25)
 
 Synthetic model data only. This supplement is the complete current reproduction package. The cited GitHub commit is a historical snapshot and does not include the current additions or interface changes.
@@ -53,3 +41,8 @@ Numerical tests illustrate the model; proofs establish all-time and classwise re
 
 ## Directed-cycle convention
 The saved Cycle matrix has W[i,(i-1) mod 20]=1. For example, zero-based row 0 receives from column 19. It is constructed by np.roll(np.eye(20), -1, axis=1). The Cycle_reverse check uses the opposite direction. Table 3 uses the saved Cycle matrix (accuracy 0.86395 / 0.78800).
+
+
+## Additional analyses
+
+Run `python revision_experiments.py` to reproduce paired confidence intervals, 315 sensitivity conditions and four switching configurations. Outputs are saved in revision_results/. See REVISION_ENVIRONMENT.json and requirements.txt for dependencies. Finally run `python plot_figures.py` to render all six publication figures from saved results with the revised style; it does not alter archived CSV/JSON. The intervals are paired episode-level marginal 95% Student t intervals conditional on the saved graphs and exposure mask. Sensitivity runs hold the input excess above the analytic threshold fixed, rather than absolute input.
